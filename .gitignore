@@ -1,0 +1,41 @@
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Kotlin
+*.kt.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Other
+MobDev-DayOnes/
+my-kotlin-project/
