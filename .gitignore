@@ -36,5 +36,8 @@ Thumbs.db
 *.temp
 *~
 
+# GitHub Actions (removed)
+.github/
+
 # Other
 my-kotlin-project/
