@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Screen Dimensions -->
+    <dimen name="welcome_horizontal_padding">24dp</dimen>
+    <dimen name="welcome_vertical_padding">32dp</dimen>
+    
+    <!-- Title and Subtitle -->
+    <dimen name="title_margin_top">48dp</dimen>
+    <dimen name="title_text_size">28sp</dimen>
+    <dimen name="subtitle_margin_top">16dp</dimen>
+    <dimen name="subtitle_text_size">16sp</dimen>
+    
+    <!-- Illustration -->
+    <dimen name="illustration_margin_top">48dp</dimen>
+    <dimen name="illustration_margin_bottom">48dp</dimen>
+    <dimen name="illustration_corner_radius">16dp</dimen>
+    <dimen name="illustration_elevation">8dp</dimen>
+    <dimen name="illustration_padding">32dp</dimen>
+    <dimen name="illustration_max_size">280dp</dimen>
+    <dimen name="illustration_min_size">200dp</dimen>
+    
+    <!-- Phone Illustration -->
+    <dimen name="phone_width">80dp</dimen>
+    <dimen name="phone_height">140dp</dimen>
+    <dimen name="phone_screen_width">68dp</dimen>
+    <dimen name="phone_screen_height">120dp</dimen>
+    
+    <!-- Graduation Cap -->
+    <dimen name="cap_size">60dp</dimen>
+    <dimen name="cap_margin_bottom">-10dp</dimen>
+    
+    <!-- Decorative Elements -->
+    <dimen name="dot_size">8dp</dimen>
+    <dimen name="dot_margin">16dp</dimen>
+    
+    <!-- Buttons -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_margin_top">32dp</dimen>
+    <dimen name="button_spacing">16dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="button_max_width">320dp</dimen>
+    
+    <!-- Bottom Spacer -->
+    <dimen name="bottom_spacer_height">32dp</dimen>
+</resources>

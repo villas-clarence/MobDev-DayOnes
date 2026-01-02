@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Graduation Cap Base -->
+    <path
+        android:fillColor="@color/graduation_cap_color"
+        android:pathData="M5,13.18v4L12,21l7,-3.82v-4L12,17l-7,-3.82zM12,3L1,9l11,6 9,-4.91V17h2V9L12,3z" />
+    
+    <!-- Cap Tassel -->
+    <circle
+        android:fillColor="@color/graduation_cap_color"
+        android:cx="19"
+        android:cy="6"
+        android:r="1.5" />
+        
+</vector>

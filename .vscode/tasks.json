@@ -2,11 +2,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Kotlin: Run",
+            "label": "Android: Build APK",
             "type": "shell",
             "command": "./gradlew.bat",
             "args": [
-                "run"
+                "assembleDebug"
             ],
             "group": {
                 "kind": "build",
@@ -21,11 +21,11 @@
             "problemMatcher": []
         },
         {
-            "label": "Kotlin: Build",
+            "label": "Android: Clean Build",
             "type": "shell",
             "command": "./gradlew.bat",
             "args": [
-                "build"
+                "clean"
             ],
             "group": "build",
             "presentation": {
@@ -37,11 +37,11 @@
             "problemMatcher": []
         },
         {
-            "label": "Kotlin: Clean",
+            "label": "Android: Install to Device",
             "type": "shell",
             "command": "./gradlew.bat",
             "args": [
-                "clean"
+                "installDebug"
             ],
             "group": "build",
             "presentation": {

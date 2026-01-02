@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/welcome_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="match_parent"
+        android:paddingHorizontal="@dimen/welcome_horizontal_padding"
+        android:paddingVertical="@dimen/welcome_vertical_padding">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/app_title_welcome"
+            android:textAlignment="center"
+            android:textColor="@color/welcome_title_color"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subtitle_margin_top"
+            android:text="@string/welcome_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/welcome_subtitle_color"
+            android:textSize="@dimen/subtitle_text_size"
+            android:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_app_title" />
+
+        <!-- Illustration Container -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_illustration"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/illustration_margin_top"
+            android:layout_marginBottom="@dimen/illustration_margin_bottom"
+            app:cardCornerRadius="@dimen/illustration_corner_radius"
+            app:cardElevation="@dimen/illustration_elevation"
+            app:cardBackgroundColor="@color/illustration_background"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="@dimen/illustration_max_size"
+            app:layout_constraintHeight_min="@dimen/illustration_min_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+            app:layout_constraintWidth_max="@dimen/illustration_max_size"
+            app:layout_constraintWidth_min="@dimen/illustration_min_size">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/illustration_padding">
+
+                <!-- Phone Base -->
+                <View
+                    android:id="@+id/phone_base"
+                    android:layout_width="@dimen/phone_width"
+                    android:layout_height="@dimen/phone_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/phone_shape"
+                    android:elevation="2dp" />
+
+                <!-- Phone Screen -->
+                <View
+                    android:id="@+id/phone_screen"
+                    android:layout_width="@dimen/phone_screen_width"
+                    android:layout_height="@dimen/phone_screen_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/phone_screen_shape"
+                    android:elevation="3dp" />
+
+                <!-- Graduation Cap -->
+                <ImageView
+                    android:id="@+id/graduation_cap"
+                    android:layout_width="@dimen/cap_size"
+                    android:layout_height="@dimen/cap_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/phone_base"
+                    android:layout_marginBottom="@dimen/cap_margin_bottom"
+                    android:src="@drawable/graduation_cap"
+                    android:elevation="4dp"
+                    android:contentDescription="@string/graduation_cap_desc" />
+
+                <!-- Small dots for decoration -->
+                <View
+                    android:layout_width="@dimen/dot_size"
+                    android:layout_height="@dimen/dot_size"
+                    android:layout_below="@id/phone_base"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dot_margin"
+                    android:background="@drawable/dot_shape"
+                    android:elevation="2dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:text="@string/log_in"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:backgroundTint="@color/button_primary_color"
+            app:cornerRadius="@dimen/button_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_illustration"
+            app:layout_constraintWidth_max="@dimen/button_max_width" />
+
+        <!-- Sign Up Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/button_spacing"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/button_text_color"
+            android:backgroundTint="@color/button_primary_color"
+            app:cornerRadius="@dimen/button_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintWidth_max="@dimen/button_max_width" />
+
+        <!-- Bottom spacer for proper scrolling -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_spacer_height"
+            app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

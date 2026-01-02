@@ -1,25 +1,5 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    kotlin("jvm") version "1.9.21"
-    application
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation(kotlin("stdlib"))
-}
-
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = "21"
-}
-
-tasks.withType<JavaCompile> {
-    targetCompatibility = "21"
-    sourceCompatibility = "21"
-}
-
-application {
-    mainClass.set("MainKt")
+    id("com.android.application") version "8.1.4" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.10" apply false
 }
